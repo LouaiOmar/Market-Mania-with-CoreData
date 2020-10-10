@@ -32,7 +32,7 @@ var itemSection = 0
          categories.performRequest(with: "https://api.bestbuy.com/v1/categories?format=json&show=id,name,subCategories.name,subCategories.id&pageSize=2&apiKey=9qSnSJNvYvSAepk4BsGSqotW")
         tableView.register(UINib(nibName: "TrendingViewCell", bundle: nil), forCellReuseIdentifier: "TrendingCell")
         tableView.register(UINib(nibName: "SubCategoriesViewCell", bundle: nil), forCellReuseIdentifier: "SubCell")
-        print(itemArray.count)
+        
     }
     
      func updateCategoriesCollection() {
